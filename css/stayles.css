@@ -743,39 +743,61 @@ input[name="r"] {
 /* ======================== /PORTFOLIO ======================== */
 
 /* =================== modal window ======================*/
-.backdrop {
+/* Стили для подложки */
+.overlays {
+   
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+  
   position: fixed;
-  z-index: 50;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--transform-time-cubic),
-    visibility var(--transform-time-cubic);
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: .3s all;
 }
-.backdrop.is-hidden {
+  /* Стили для модальных окон */
+  .modal {
+  display: block;
+  /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
-}
-.modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  
+  
+  
+  /*  Установаем ширину окна  */
   width: 100%;
-
-  background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform var(--transform-time-cubic);
-  padding: 72px 24px 24px 24px;
-}
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, 50%) scale(0);
-}
+  /* max-width: 335px; */
+  
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50; /* Должен быть выше чем у подложки*/
+  
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+  text-align: start;
+  padding: 40px 24px;
+  border-radius: 3px;
+  background-color:rgb(228, 202, 233);
+  transition: 0.3s all;
+  color: #fff;
+  }
+  
+  /* Стили для кнопки закрытия */
+ 
+  /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+  .modal.active,
+  .overlays.active{
+   opacity: 1;
+   visibility: visible;
+  }
+  
 .modal-close-button {
   position: absolute;
   top: 24px;
@@ -787,9 +809,9 @@ input[name="r"] {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  padding: 0;
-  background: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  background: #f3c5da;
+  border: 1px solid rgba(59, 19, 19, 0.1);
   cursor: pointer;
 
   transition: border-color var(--transform-time-cubic),
@@ -805,6 +827,9 @@ input[name="r"] {
   transition: fill var(--transform-time-cubic);
 }
 /* ===================== /modal window ========================*/
+
+
+/* ================================================================= */
 
 /*=========================== form ============================*/
 

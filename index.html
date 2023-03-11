@@ -139,7 +139,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="main-title">Ми здійснюємо Ваші солодкі мрії</h1>
-        <button type="button" class="button main-button" data-modal-open>
+        <button type="button" class="button main-button js-open-modal"  data-modal="2">
           Замовити зараз
         </button>
       </div>
@@ -610,16 +610,17 @@
     </section>
   </footer>
 
-  <!-- Backdrop -->
+  <!-- MODAL WINDOW -->
 
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="modal-close-button" data-modal-close>
-        <svg class="modal-close-button-icon" width="16" height="8">
-          <use href="./images/sprite.svg#icon-Vector"></use>
-        </svg>
-      </button>
-
+  <section class="modal-winwow-2 container">
+   
+    <!--  модалка (треба змінити назву data-modal = "2") -->
+    <div class="modal" data-modal="2">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg
+        class="modal-close-button js-modal-close" width="16" height="16">
+        <use href="./images/sprite.svg#icon-Vector"></use>
+      </svg>
       <p class="modal-text">Залиште контактні дані та ми Вам зателефонуємо</p>
 
       <!-- Form -->
@@ -671,12 +672,15 @@
             </svg></span></label>
         <button type="submit" class="modal-form-btn button">Send</button>
       </form>
+      
     </div>
-  </div>
+    <!-- Подложка под модальным окном -->
+    <div class="overlays js-overlay-modal"></div>
+    </section> 
+    <!---------------------- /modal-window-------------------- -->
 
-  <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
-
+  <script src="./js/modal-window.js"></script>
   <script src="./js/bot.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>

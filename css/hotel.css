@@ -110,12 +110,17 @@ border-radius: 3px;
 .contacts-page {
   max-height: 80%;
   padding-top:20px;
-  padding-bottom: 200px;
+  padding-bottom: 20px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   
   background-image: url(../css/style/hero-image/three-raspberries-isolated.webp);
+}
+.contact-flex {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
 }
 .mb-menu-item {
   display: flex;
@@ -124,9 +129,24 @@ border-radius: 3px;
 }
 .social-icon {
   display: inline-block;
+  vertical-align: bottom;
+}
+.contacts-page-phone {
+ margin-bottom: 60px;
+}
+.item-icon-contact {
+  vertical-align: bottom;
+  padding:10px;
+  border-radius: 4px;
+ border:2px solid #db9d9d;
+}
+.item-icon-contact:not(:last-child) {
+  margin-bottom: 40px;
+}
+.social-icon {
+fill: #c03a3a;
  
 }
-
 /* _______________________________________________ */
 
 /*____________________ Слайдер____________________ */

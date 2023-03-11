@@ -160,83 +160,108 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="contacts-page">
         <div class="contacts-section container">
-          <ul class="contacts-page-phone">
+          <div class="contact-flex">
+            <ul class="contacts-page-phone">
+              <li class="item-icon-contact">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-viber_logo"></use>
+                </svg>
+                <a href="viber://add?number=380980001335">+38 098-000-1335</a>
+              </li>
 
-            <li class="mb-menu-item">
-              <svg class="social-icon" width="20" height="20">
-                <use href="./images/sprite.svg#icon-viber_logo"></use>
-              </svg>
-              <a href="viber://add?number=380980001335">+38 098-000-1335</a>
-            </li>
-
-            <li class="mb-menu-item">
-              <svg class="social-icon-tel" width="20" height="20">
+              <li class="item-icon-contact">
+                <svg class="social-icon-tel" width="20" height="20">
                   <use href="./images/sprite.svg#icon-phone-call"></use>
                 </svg>
-              <a href="tel:+48881505256" class="adress link"
-                >+48 881-505-256</a>
-            </li>
+                <a href="tel:+48881505256" class="adress link"
+                  >+48 881-505-256</a
+                >
+              </li>
+              <li class="item-icon-contact">
+                <a href="viber://add?number=380679727707">Viber</a>
+              </li>
+            </ul>
+            <ul class="contacts-page-social">
+              <li class="item-icon-contact">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="link-adres-social"
+                >
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-Instagram_icon-1"></use>
+                  </svg>
+                  instagram
+                </a>
+              </li>
 
-            
-            <li class="mb-menu-item"><a href="viber://add?number=380679727707">Viber</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          
-            
-          </ul>
+              <li class="item-icon-contact">
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="link-adres-social"
+                >
+                  <svg class="social-icon" width="20" height="20">
+                    <use
+                      href="./images/sprite.svg#icon-facebook_icon-blu"
+                    ></use>
+                  </svg>
+                  facebook
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-------------------- modal-window -------------------------->
-<section class="modal-winwow-3 container">
-  <!-- кнопка модалки (треба змінити назву data-modal = "????????????????????????") -->
-      <button
-      type="button"
-      class="button page-button js-open-modal"
-      data-modal="3"
-    >
-      View prices
-    </button>
-  
-  <!--  модалка (треба змінити назву data-modal = "????????????????????????") -->
-      <div class="modal" data-modal="3">
-        <!--   Svg иконка для закрытия окна  -->
-        <svg
-          class="modal__cross js-modal-close"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
+      <section class="modal-winwow-3 container">
+        <!-- кнопка модалки (треба змінити назву data-modal = "????????????????????????") -->
+        <button
+          type="button"
+          class="button page-button js-open-modal"
+          data-modal="3"
         >
-          <path
-            d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-          />
-        </svg>
-        
-        <p class="modal__title">Viev Prices</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores eos
-          nulla vero possimus optio, odit non numquam quis iure vel in consequuntur
-          quo temporibus molestiae accusamus neque quidem recusandae?
-        </p>
-      </div>
-      <!-- Подложка под модальным окном -->
-      <div class="overlay js-overlay-modal"></div>
-      <!---------------------- /modal-window-------------------- -->
-    </section>
+          View prices
+        </button>
 
+        <!--  модалка (треба змінити назву data-modal = "????????????????????????") -->
+        <div class="modal" data-modal="3">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg
+            class="modal__cross js-modal-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+            />
+          </svg>
 
-
+          <p class="modal__title">Viev Prices</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            dolores eos nulla vero possimus optio, odit non numquam quis iure
+            vel in consequuntur quo temporibus molestiae accusamus neque quidem
+            recusandae?
+          </p>
+        </div>
+        <!-- Подложка под модальным окном -->
+        <div class="overlay js-overlay-modal"></div>
+        <!---------------------- /modal-window-------------------- -->
+      </section>
     </main>
     <footer></footer>
     <script src="./js/modal-window.js"></script>
-  <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
-  <script src="./js/bot.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/bot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>

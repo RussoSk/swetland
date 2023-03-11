@@ -15,7 +15,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/stayles.css" />
   </head>
 
@@ -154,7 +157,7 @@
                     class="link-social color-icon-personal"
                   >
                     <svg class="social-icon" width="16" height="16">
-                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                      <use href="./images/sprite.svg#icon-tok_tik_icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -186,7 +189,7 @@
         <div class="container">
           <ul class="list-peculiarities">
             <li class="item-peculiarities">
-              <div class="peculiarities-card">
+              <article class="peculiarities-card">
                 <div class="box-icon">
                   <img
                     src="./images/main/keick-5-1x-450-300.jpg"
@@ -203,11 +206,11 @@
                     відповідно Ваших побажань.
                   </p>
                 </div>
-              </div>
+              </article>
             </li>
 
             <li class="item-peculiarities">
-              <div class="peculiarities-card">
+              <article class="peculiarities-card">
                 <div class="box-icon">
                   <div class="box-icon">
                     <img
@@ -227,11 +230,11 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </article>
             </li>
 
             <li class="item-peculiarities">
-              <div class="peculiarities-card">
+              <article class="peculiarities-card">
                 <div class="box-icon">
                   <div class="box-icon">
                     <img
@@ -251,11 +254,11 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </article>
             </li>
 
             <li class="item-peculiarities">
-              <div class="peculiarities-card">
+              <article class="peculiarities-card">
                 <div class="box-icon">
                   <img
                     src="./images/main/keick-2-1x-450-300.jpg"
@@ -272,7 +275,7 @@
                     відгуками наших клієтів.
                   </p>
                 </div>
-              </div>
+              </article>
             </li>
           </ul>
         </div>
@@ -408,7 +411,7 @@
                         class="link-social color-icon-personal"
                       >
                         <svg class="social-icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-linkedin"></use>
+                          <use href="./images/sprite.svg#icon-tok_tik_icon"></use>
                         </svg>
                       </a>
                     </li>
@@ -482,7 +485,7 @@
                         class="link-social color-icon-personal"
                       >
                         <svg class="social-icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-linkedin"></use>
+                          <use href="./images/sprite.svg#icon-tok_tik_icon"></use>
                         </svg>
                       </a>
                     </li>
@@ -497,19 +500,18 @@
       <!-- --------------------SLIDER----------------------------- -->
       <section class="page-slaid">
         <div class="container">
-          <div class="slaiders swiper">
-            <ul class="list-projekts swiper-wrapper">
-              <li class="item-projekts swiper-slide">
-                <article class="card-portfolio">
+          <div class="reviews-slaider swiper">
+            <ul class="reviews swiper-wrapper">
+              <li class="item-projekts reviews-list swiper-slide">
+                <article class="card-portfolio review-card">
                   <a href="#" class="link-card-portfolio link">
-                    <div class="card-thumb">
+                    <div class="card-thumb review-image">
                       <img
                         src="./images/portfolio/img1.jpg"
                         alt="foto banking App"
                         width="396"
                         height="300"
                       />
-                     
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">
@@ -531,7 +533,6 @@
                         width="396"
                         height="300"
                       />
-                      
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">Cashless Payment</h3>
@@ -551,7 +552,6 @@
                         width="396"
                         height="300"
                       />
-                      
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">Meditaion App</h3>
@@ -571,7 +571,6 @@
                         width="396"
                         height="300"
                       />
-                    
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">Taxi Service</h3>
@@ -591,7 +590,6 @@
                         width="396"
                         height="300"
                       />
-                   
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">Screen Illustrations</h3>
@@ -611,7 +609,6 @@
                         width="396"
                         height="300"
                       />
-                    
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">Online Courses</h3>
@@ -631,7 +628,6 @@
                         width="396"
                         height="300"
                       />
-                     
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">
@@ -653,7 +649,6 @@
                         width="396"
                         height="300"
                       />
-                    
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">Organic Food</h3>
@@ -673,7 +668,6 @@
                         width="396"
                         height="300"
                       />
-                     
                     </div>
                     <div class="card-content">
                       <h3 class="sup-title-portfolio">Fresh Coffee</h3>
@@ -684,6 +678,13 @@
               </li>
             </ul>
           </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="reviews-buttons">
+            <button class="button btn-sl review-button-prev" type="button "><</button>
+            <button class="button btn-sl review-button-next" type="button ">></button>
+          </div>
+          <div class="reviews-dots"></div>
         </div>
       </section>
     </main>
@@ -750,7 +751,7 @@
                   class="link-social color-icon-footer"
                 >
                   <svg class="social-icon" width="16" height="16">
-                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                    <use href="./images/sprite.svg#icon-tok_tik_icon"></use>
                   </svg>
                 </a>
               </li>
@@ -764,7 +765,9 @@
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-viber_logo"></use>
                 </svg>
-                <a href="viber://add?number=380970001335" class="link-viber ">+38 097-000-1335</a>
+                <a href="viber://add?number=380970001335" class="link-viber"
+                  >+38 097-000-1335</a
+                >
               </li>
             </div>
           </div>

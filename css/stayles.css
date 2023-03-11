@@ -432,16 +432,26 @@ img {
 .page-slaid {
   padding-top: 120px;
   padding-bottom: 120px;
-  border: 2px solid rgb(85, 83, 82);
+ 
 }
-.slaiders {
+.reviews-slaider {
   max-width: 800px;
   margin: 0 auto;
 }
 .item-projekts {
   width: 100%;
 }
+.reviews-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.btn-sl {
+  padding: 0 20px;
+  border-radius: 50px;
 
+}
 /* ======================== /SLAIDER======================== */
 
 /* ======================== FOOTER ======================== */
@@ -558,13 +568,17 @@ img {
   color: var(--primary-color);
 }
 .item-icon-contact {
-  padding:10px;
+  display: flex;
+  padding:10px 30px;
   border-radius: 4px;
- border:2px solid #5e3b96;
+  border:2px solid #5e3b96;
+  align-items: center;
+  
 }
 .link-viber {
   color: #ffffff;
 }
+
 /* ======================== /FOOTER ======================== */
 
 /* ======================== PORTFOLIO ======================== */

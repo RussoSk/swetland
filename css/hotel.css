@@ -107,7 +107,16 @@ border-radius: 3px;
 
 
 /* CONTACT */
-
+.contacts-page {
+  max-height: 80%;
+  padding-top:20px;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  
+  background-image: url(../css/style/hero-image/three-raspberries-isolated.webp);
+}
 .mb-menu-item {
   display: flex;
  align-items: center;
@@ -117,9 +126,7 @@ border-radius: 3px;
   display: inline-block;
  
 }
-.social-icon-tel {
 
-}
 /* _______________________________________________ */
 
 /*____________________ Слайдер____________________ */

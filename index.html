@@ -1,227 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/stayles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main Page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/stayles.css" />
-</head>
-
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="main-header container">
-      <nav class="top-line-container">
-        <a href="./index.html" class="main-logo link">Sweet<span class="sup-logo">Land</span></a>
-        <ul class="list-item-container">
-          <li class="menu-item">
-            <a href="./index.html" class="menu-link link active-page">Sweetland</a>
-          </li>
-          <li class="menu-item">
-            <a href="./portfolio.html" class="menu-link link">Галерея</a>
-          </li>
-          <li class="menu-item">
-            <a href="./contacts.html" class="menu-link link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      
-      <address>
-        <ul class="list-address-container">
-          <li class="item-address">
-            <a href="mailto:sweetland.city1@gmail.com" class="adress link">sweetland.city1@gmail.com</a>
-          </li>
-          <li class="item-address-tel">
-            <a href="tel:+48881505256" class="adress link">+48 881505256</a>
-          </li>
-        </ul>
-      </address>
-
-      <!-- button burger -->
-      <button type="button" class="btn-burger" data-menu-open>
-        <svg class="btn-burger-svg" width="32" height="22">
-          <use href="./images/sprite.svg#icon-btn-gamburger"></use>
-        </svg>
-      </button>
-    </div>
-
-    <!-- mobile menu -->
-    <div class="mobile-menu is-open" data-menu>
-      <div class="mobile-menu-container container">
-        <button type="button" class="btn-close-mob-menu" data-menu-close>
-          <svg class="mob-menu-close-btn" width="8" height="8">
-            <use href="./images/sprite.svg#icon-close-btn"></use>
-          </svg>
-        </button>
-        <nav class="nav-mobile-menu">
-          <ul class="mb-menu-list">
-            <li class="mb-menu-item">
-              <a href="./index.html" class="mb-menu-list">Sweetland</a>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="main-header container">
+        <nav class="top-line-container">
+          <a href="./index.html" class="main-logo link"
+            >Sweet<span class="sup-logo">Land</span></a
+          >
+          <ul class="list-item-container">
+            <li class="menu-item">
+              <a href="./index.html" class="menu-link link active-page"
+                >Sweetland</a
+              >
             </li>
-            <li class="mb-menu-item">
-              <a href="./portfolio.html" class="mb-menu-list">Галерея</a>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="menu-link link">Галерея</a>
             </li>
-            <li class="mb-menu-item">
-              <a href="./contacts.html" class="mb-menu-list">Контакти</a>
+            <li class="menu-item">
+              <a href="./contacts.html" class="menu-link link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <div>
-          <address>
-            <ul class="mb-menu-adress">
+
+        <address>
+          <ul class="list-address-container">
+            <li class="item-address">
+              <a href="mailto:sweetland.city1@gmail.com" class="adress link"
+                >sweetland.city1@gmail.com</a
+              >
+            </li>
+            <li class="item-address-tel">
+              <a href="tel:+48881505256" class="adress link">+48 881505256</a>
+            </li>
+          </ul>
+        </address>
+
+        <!-- button burger -->
+        <button type="button" class="btn-burger" data-menu-open>
+          <svg class="btn-burger-svg" width="32" height="22">
+            <use href="./images/sprite.svg#icon-btn-gamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu is-open" data-menu>
+        <div class="mobile-menu-container container">
+          <button type="button" class="btn-close-mob-menu" data-menu-close>
+            <svg class="mob-menu-close-btn" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <nav class="nav-mobile-menu">
+            <ul class="mb-menu-list">
               <li class="mb-menu-item">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-viber_logo"></use>
-                </svg>
-                <a href="viber://add?number=380980001335">+38 098-000-1335</a>
+                <a href="./index.html" class="mb-menu-list">Sweetland</a>
               </li>
               <li class="mb-menu-item">
-                <svg class="social-icon-tel" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-phone-call"></use>
-                </svg>
-                <a href="tel:+48881505256" class="adress link">+48 881 505 256</a>
+                <a href="./portfolio.html" class="mb-menu-list">Галерея</a>
               </li>
               <li class="mb-menu-item">
-                <a href="mailto:sweetland.city1@gmail.com" class="adress link">sweetland.city1@gmail.com</a>
+                <a href="./contacts.html" class="mb-menu-list">Контакти</a>
               </li>
             </ul>
-          </address>
+          </nav>
           <div>
-            <ul class="list-icon-social-menu">
-              <li class="item-icon-social">
-                <a href="https://instagram.com/sweetland_city?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer noopener"
-                  class="link-social color-icon-personal">
-                  <svg class="social-icon" width="16" height="16">
-                    <use href="./images/sprite.svg#icon-instagram"></use>
+            <address>
+              <ul class="mb-menu-adress">
+                <li class="mb-menu-item">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-viber_logo"></use>
                   </svg>
-                </a>
-              </li>
-              <li class="item-icon-social">
-                <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
-                  class="link-social color-icon-personal">
-                  <svg class="social-icon" width="16" height="16">
-                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  <a href="viber://add?number=380980001335">+38 098-000-1335</a>
+                </li>
+                <li class="mb-menu-item">
+                  <svg class="social-icon-tel" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-phone-call"></use>
                   </svg>
-                </a>
-              </li>
-              <li class="item-icon-social">
-                <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
-                  class="link-social color-icon-personal">
-                  <svg class="social-icon" width="16" height="16">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item-icon-social">
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
-                  class="link-social color-icon-personal">
-                  <svg class="social-icon" width="16" height="16">
-                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+                  <a href="tel:+48881505256" class="adress link"
+                    >+48 881 505 256</a
+                  >
+                </li>
+                <li class="mb-menu-item">
+                  <a href="mailto:sweetland.city1@gmail.com" class="adress link"
+                    >sweetland.city1@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div>
+              <ul class="list-icon-social-menu">
+                <li class="item-icon-social">
+                  <a
+                    href="https://instagram.com/sweetland_city?igshid=YmMyMTA2M2Y="
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="link-social color-icon-personal"
+                  >
+                    <svg class="social-icon" width="16" height="16">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item-icon-social">
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="link-social color-icon-personal"
+                  >
+                    <svg class="social-icon" width="16" height="16">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item-icon-social">
+                  <a
+                    href="https://uk-ua.facebook.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="link-social color-icon-personal"
+                  >
+                    <svg class="social-icon" width="16" height="16">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item-icon-social">
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="link-social color-icon-personal"
+                  >
+                    <svg class="social-icon" width="16" height="16">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <!-- HERO  -->
-    <section class="hero">
-      <div class="container">
-        <h1 class="main-title">Ми здійснюємо Ваші солодкі мрії</h1>
-        <button type="button" class="button main-button js-open-modal"  data-modal="2">
-          Замовити зараз
-        </button>
-      </div>
-    </section>
+    <main>
+      <!-- HERO  -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="main-title">Ми здійснюємо Ваші солодкі мрії</h1>
+          <button
+            type="button"
+            class="button main-button js-open-modal"
+            data-modal="2"
+          >
+            Замовити зараз
+          </button>
+        </div>
+      </section>
 
-    <!-- Pecularities -->
-    <section class="peculiarities section">
-      <h2 class="visually-hidden">Чому саме ми</h2>
-      <div class="container">
-        <ul class="list-peculiarities">
-
-          <li class="item-peculiarities">
-            <div class="peculiarities-card">
-              <div class="box-icon">
-                <img src="./images/main/keick-5-1x-450-300.jpg" alt="gg" width="366" height="243">
-              </div>
-              <div class="item-pecularities-tumb">
-                <h3 class="sup-title">Натуральні інгридієнти</h3>
-                <p class="base-text">
-                  В нашій кондитерській ми використовуємо виключнно натуральні та лише свіжі інгридієнти. Можливе використання інгрідієнтів відповідно Ваших побажань.
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li class="item-peculiarities">
-            <div class="peculiarities-card">
-              <div class="box-icon">
+      <!-- Pecularities -->
+      <section class="peculiarities section">
+        <h2 class="visually-hidden">Чому саме ми</h2>
+        <div class="container">
+          <ul class="list-peculiarities">
+            <li class="item-peculiarities">
+              <div class="peculiarities-card">
                 <div class="box-icon">
-                  <img src="./images/main/keick-1-1x-450-300.jpg" alt="gg" width="366" height="243">
+                  <img
+                    src="./images/main/keick-5-1x-450-300.jpg"
+                    alt="gg"
+                    width="366"
+                    height="243"
+                  />
                 </div>
-
                 <div class="item-pecularities-tumb">
-                  <h3 class="sup-title">Індивідуальний дизайн</h3>
+                  <h3 class="sup-title">Натуральні інгридієнти</h3>
                   <p class="base-text">
-                    У нас Ви можете замовити торт або тістечка за індивідуальним дизайном, ми враховуємо побажання клієтів і намагаємось перевершити їх очікування.
+                    В нашій кондитерській ми використовуємо виключнно натуральні
+                    та лише свіжі інгридієнти. Можливе використання інгрідієнтів
+                    відповідно Ваших побажань.
                   </p>
                 </div>
               </div>
-          </li>
+            </li>
 
-          <li class="item-peculiarities">
-            <div class="peculiarities-card">
-              <div class="box-icon">
+            <li class="item-peculiarities">
+              <div class="peculiarities-card">
                 <div class="box-icon">
-                  <img src="./images/main/keick-3-1x-450-300.jpg" alt="gg" width="366" height="243">
-                </div>
+                  <div class="box-icon">
+                    <img
+                      src="./images/main/keick-1-1x-450-300.jpg"
+                      alt="gg"
+                      width="366"
+                      height="243"
+                    />
+                  </div>
 
+                  <div class="item-pecularities-tumb">
+                    <h3 class="sup-title">Індивідуальний дизайн</h3>
+                    <p class="base-text">
+                      У нас Ви можете замовити торт або тістечка за
+                      індивідуальним дизайном, ми враховуємо побажання клієтів і
+                      намагаємось перевершити їх очікування.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item-peculiarities">
+              <div class="peculiarities-card">
+                <div class="box-icon">
+                  <div class="box-icon">
+                    <img
+                      src="./images/main/keick-3-1x-450-300.jpg"
+                      alt="gg"
+                      width="366"
+                      height="243"
+                    />
+                  </div>
+
+                  <div class="item-pecularities-tumb">
+                    <h3 class="sup-title">Вишуканий смак</h3>
+                    <p class="base-text">
+                      Торти та тістечка від наших кондитерів мають
+                      неперевершений смак, та вишукане оздоблення. Ми пропонуємо
+                      100% гарантію задоволення.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item-peculiarities">
+              <div class="peculiarities-card">
+                <div class="box-icon">
+                  <img
+                    src="./images/main/keick-2-1x-450-300.jpg"
+                    alt="gg"
+                    width="366"
+                    height="243"
+                  />
+                </div>
                 <div class="item-pecularities-tumb">
-                  <h3 class="sup-title">Вишуканий смак</h3>
+                  <h3 class="sup-title">Найвища якість</h3>
                   <p class="base-text">
-                    Торти та тістечка від наших кондитерів мають неперевершений смак, та вишукане оздоблення. Ми пропонуємо 100% гарантію задоволення.
+                    У нас Ви отримаєте тільки найкращі вироби. Якість наших
+                    тортів і тістечок підтверджена численними позитивними
+                    відгуками наших клієтів.
                   </p>
                 </div>
               </div>
-          </li>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <li class="item-peculiarities">
-            <div class="peculiarities-card">
-              <div class="box-icon">
-                <img src="./images/main/keick-2-1x-450-300.jpg" alt="gg" width="366" height="243">
-              </div>
-              <div class="item-pecularities-tumb">
-                <h3 class="sup-title">Найвища якість</h3>
-                <p class="base-text">
-                 У нас Ви отримаєте тільки найкращі вироби. Якість наших тортів і тістечок підтверджена численними позитивними відгуками наших клієтів.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Opportuniti -->
-    <section class="opportunity">
-      <div class="container">
-        <h2 class="title-section">Наші вироби</h2>
-        <ul class="list-opportunity">
-          <li class="item-opportunity">
-            <picture>
-              <!-- <source srcset="
+      <!-- Opportuniti -->
+      <section class="opportunity">
+        <div class="container">
+          <h2 class="title-section">Наші вироби</h2>
+          <ul class="list-opportunity">
+            <li class="item-opportunity">
+              <picture>
+                <!-- <source srcset="
                     ./images/main/comp.jpg    1x,
                     ./images/main/comp-2x.jpg 2x
                   " media="(min-width: 480px)" />
@@ -229,22 +293,32 @@
                     ./images/main/comp-1x.webp 1x,
                     ./images/main/comp-2x.webp 2x
                   " type="image/webp " media="(min-width: 480px)" /> -->
-              <img src="./images/main/tort23-1x.jpg" alt="tort" width="360" height="300" />
-            </picture>
-          </li>
-          <li class="item-opportunity">
-            <picture>
-              <!-- <source srcset="./images/main/tel.jpg 1x, ./images/main/tel-2x.jpg 2x" media="(min-width: 480px)" />
+                <img
+                  src="./images/main/tort23-1x.jpg"
+                  alt="tort"
+                  width="360"
+                  height="300"
+                />
+              </picture>
+            </li>
+            <li class="item-opportunity">
+              <picture>
+                <!-- <source srcset="./images/main/tel.jpg 1x, ./images/main/tel-2x.jpg 2x" media="(min-width: 480px)" />
               <source srcset="
                     ./images/main/tel-1x.webp 1x,
                     ./images/main/tel-2x.webp 2x
                   " type="image/webp " media="(min-width: 480px)" /> -->
-              <img src="./images/main/bento1-1x.jpg" alt="bento-tort" width="360" height="300" />
-            </picture>
-          </li>
-          <li class="item-opportunity">
-            <picture>
-              <!-- <source srcset="
+                <img
+                  src="./images/main/bento1-1x.jpg"
+                  alt="bento-tort"
+                  width="360"
+                  height="300"
+                />
+              </picture>
+            </li>
+            <li class="item-opportunity">
+              <picture>
+                <!-- <source srcset="
                     ./images/main/desktop.jpg    1x,
                     ./images/main/desktop-2x.jpg 2x
                   " type="image/jpeg " media="(min-width: 480px)" />
@@ -252,437 +326,604 @@
                     ./images/main/desktop-1x.webp 1x,
                     ./images/main/desktop-2x.webp 2x
                   " type="image/webp " media="(min-width: 480px)" /> -->
-              <img src="./images/main/smak1-1x.jpg" alt="ice-cream" width="360" height="300" />
-            </picture>
-          </li>
-        </ul>
-      </div>
-    </section>
+                <img
+                  src="./images/main/smak1-1x.jpg"
+                  alt="ice-cream"
+                  width="360"
+                  height="300"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Personal -->
-    <section class="personal section">
-      <div class="container">
-        <h2 class="title-section">Наші майстри</h2>
-        <ul class="list-personal">
-          <li class="item-personal">
-            <article class="card-personal">
-              <div class="card-thumb">
-                <picture>
-                  <!-- <source srcset="
+      <!-- Personal -->
+      <section class="personal section">
+        <div class="container">
+          <h2 class="title-section">Наші майстри</h2>
+          <ul class="list-personal">
+            <li class="item-personal">
+              <article class="card-personal">
+                <div class="card-thumb">
+                  <picture>
+                    <!-- <source srcset="
                         ./images/main/emploees/mark.jpg    1x,
                         ./images/main/emploees/mark-2x.jpg 2x
                       " media="(min-width: 480px)" /> -->
 
-                  <img src="./images/main/shef.jpg" alt=" photo Mark Guerrero" width="264" height="260" />
-                </picture>
-              </div>
-              <div class="card-text-personal">
-                <h3 class="sup-title-personal">Світлана Дяченко</h3>
-                <p class="base-text">Шеф-кондитер</p>
-                <ul class="list-icon-social">
-                  <li class="item-icon-social">
-                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
-                      class="link-social color-icon-personal">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item-icon-social">
-                    <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
-                      class="link-social color-icon-personal">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item-icon-social">
-                    <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
-                      class="link-social color-icon-personal">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item-icon-social">
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
-                      class="link-social color-icon-personal">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </li>
+                    <img
+                      src="./images/main/shef.jpg"
+                      alt=" photo Mark Guerrero"
+                      width="264"
+                      height="260"
+                    />
+                  </picture>
+                </div>
+                <div class="card-text-personal">
+                  <h3 class="sup-title-personal">Світлана Дяченко</h3>
+                  <p class="base-text">Шеф-кондитер</p>
+                  <ul class="list-icon-social">
+                    <li class="item-icon-social">
+                      <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="link-social color-icon-personal"
+                      >
+                        <svg class="social-icon" width="16" height="16">
+                          <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="item-icon-social">
+                      <a
+                        href="https://twitter.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="link-social color-icon-personal"
+                      >
+                        <svg class="social-icon" width="16" height="16">
+                          <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="item-icon-social">
+                      <a
+                        href="https://uk-ua.facebook.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="link-social color-icon-personal"
+                      >
+                        <svg class="social-icon" width="16" height="16">
+                          <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="item-icon-social">
+                      <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="link-social color-icon-personal"
+                      >
+                        <svg class="social-icon" width="16" height="16">
+                          <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
 
-          <li class="item-personal">
-            <article class="card-personal">
-              <div class="card-thumb">
-                <picture>
-                  <!-- <source srcset="
+            <li class="item-personal">
+              <article class="card-personal">
+                <div class="card-thumb">
+                  <picture>
+                    <!-- <source srcset="
                         ./images/main/emploees/tom.jpg    1x,
                         ./images/main/emploees/tom-2x.jpg 2x
                       " media="(min-width: 480px)" /> -->
 
-                  <img src="./images/main/su-shef.jpg" alt="photo Tom Ford" width="264" height="260" />
-                </picture>
-              </div>
-              <div class="card-text-personal">
-                <h3 class="sup-title-personal">Анастасія Скакун</h3>
-                <p class="base-text">Кондитер</p>
-                <ul class="list-icon-social">
-                  <li class="item-icon-social">
-                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
-                      class="link-social color-icon-personal">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item-icon-social">
-                    <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
-                      class="link-social color-icon-personal">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item-icon-social">
-                    <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
-                      class="link-social color-icon-personal">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item-icon-social">
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
-                      class="link-social color-icon-personal">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </li>
-
-          
-        </ul>
-      </div>
-    </section>
-  </main>
-  <section class="foto-galary">
-
-    <div class="slaider  container">
-      <div class="slaides">
-        <input type="radio" name="r" id="r1" checked />
-        <input type="radio" name="r" id="r2" />
-        <input type="radio" name="r" id="r3" />
-        <div class="slide s1">
-          <picture class="slider-img">
-            <!-- <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-desk1-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-desk1-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-tab1-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-tab1-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-mob1-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-mob1-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 375px)"
-            /> -->
-            <img
-              src="./images/portfolio/img1.jpg"
-              alt="image building1"
-              max-width="300"
-              max-height="360"
-            />
-          </picture>
-        </div>
-        <div class="slide s2">
-          <picture class="slider-img">
-            <!-- <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-desk2-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-desk2-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-tab2-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-tab2-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-mob2-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-mob2-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 375px)"
-            /> -->
-            <img
-              src="./images/portfolio/img2.jpg"
-              alt="image building1"
-              max-width="300"
-              max-height="360"
-            />
-          </picture>
-        </div>
-        <div class="slide s3">
-          <picture class="slider-img">
-            <!-- <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-desk2-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-desk2-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-tab2-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-tab2-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ../../img/hotel-page/hotel-hero-mob2-1x.jpg 1x,
-                ../../img/hotel-page/hotel-hero-mob2-2x.jpg 2x
-              "
-              type="image/jpeg "
-              media="(min-width: 375px)"
-            /> -->
-            <img
-              src="./images/portfolio/img2.jpg"
-              alt="image building1"
-              max-width="300"
-              max-height="360"
-            />
-          </picture>
-        </div>
-      </div>
-
-      <div class="navigation">
-        <label for="r1" class="bar"></label>
-        <label for="r2" class="bar"></label>
-        <label for="r3" class="bar"></label>
-      </div>
-    </div>
-  </section>
-  <!-- Customers -->
-  <section class="customers">
-    <div class="container">
-      <h2 class="title-section">Customers</h2>
-      <ul class="list-customers">
-        <li class="item-customers">
-          <a href="#" class="link-customers">
-            <svg class="icon-customers" width="104" height="56">
-              <use href="./images/sprite.svg#icon-Logo"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item-customers">
-          <a href="#" class="link-customers">
-            <svg class="icon-customers" width="104" height="56">
-              <use href="./images/sprite.svg#icon-Logo2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item-customers">
-          <a href="#" class="link-customers">
-            <svg class="icon-customers" width="104" height="56">
-              <use href="./images/sprite.svg#icon-Logo3"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item-customers">
-          <a href="#" class="link-customers">
-            <svg class="icon-customers" width="104" height="56">
-              <use href="./images/sprite.svg#icon-Logo4"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item-customers">
-          <a href="#" class="link-customers">
-            <svg class="icon-customers" width="104" height="56">
-              <use href="./images/sprite.svg#icon-Logo5"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item-customers">
-          <a href="#" class="link-customers">
-            <svg class="icon-customers" width="104" height="56">
-              <use href="./images/sprite.svg#icon-Logo6"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- FOOTER -->
-  <footer class="footer">
-    <section class="footer-list container mini">
-      <h2 class="visually-hidden">Footer</h2>
-
-      <div class="footer-flex">
-        <div class="footer-title">
-          <a href="./index.html" class="main-logo link">Sweet<span class="sub-logo">Land</span></a>
-          <p class="base-text-white">
-            Найсмачніші торти на замовлення від професійного кондитера з унікальним дизайном на найвибагливіший смак.
-          </p>
-        </div>
-        <div class="footer-social-media">
-          <p class="footer-social">Social media</p>
-          <ul class="footer-list-icon-social">
-            <li class="item-icon-social">
-              <a href="https://instagram.com/sweetland_city?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer noopener"
-                class="link-social color-icon-footer">
-                <svg class="social-icon" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-icon-social">
-              <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
-                class="link-social color-icon-footer">
-                <svg class="social-icon" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-icon-social">
-              <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
-                class="link-social color-icon-footer">
-                <svg class="social-icon" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-icon-social">
-              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
-                class="link-social color-icon-footer">
-                <svg class="social-icon" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
+                    <img
+                      src="./images/main/su-shef.jpg"
+                      alt="photo Tom Ford"
+                      width="264"
+                      height="260"
+                    />
+                  </picture>
+                </div>
+                <div class="card-text-personal">
+                  <h3 class="sup-title-personal">Анастасія Скакун</h3>
+                  <p class="base-text">Кондитер</p>
+                  <ul class="list-icon-social">
+                    <li class="item-icon-social">
+                      <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="link-social color-icon-personal"
+                      >
+                        <svg class="social-icon" width="16" height="16">
+                          <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="item-icon-social">
+                      <a
+                        href="https://twitter.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="link-social color-icon-personal"
+                      >
+                        <svg class="social-icon" width="16" height="16">
+                          <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="item-icon-social">
+                      <a
+                        href="https://uk-ua.facebook.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="link-social color-icon-personal"
+                      >
+                        <svg class="social-icon" width="16" height="16">
+                          <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="item-icon-social">
+                      <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="link-social color-icon-personal"
+                      >
+                        <svg class="social-icon" width="16" height="16">
+                          <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
             </li>
           </ul>
         </div>
+      </section>
 
-        <div class="footer-subscribe">
-          <p class="footer-social">Subscribe</p>
-          <div class="footer-form-cont">
-            <form class="footer-email">
-              <input name="email" type="email" class="footer-form-input" placeholder="E-mail" required />
-              <button type="submit" class="footer-subscribe-btn button">
-                Subscribe<svg class="subscribe-btn-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-subscribe-list"></use>
-                </svg>
-              </button>
-            </form>
+      <!-- --------------------SLIDER----------------------------- -->
+      <section class="page-slaid">
+        <div class="container">
+          <div class="slaiders swiper">
+            <ul class="list-projekts swiper-wrapper">
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img1.jpg"
+                        alt="foto banking App"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">
+                        Banking App Interface Concept
+                      </h3>
+                      <p class="base-text">App</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img2.jpg"
+                        alt="foto mobile phone"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">Cashless Payment</h3>
+                      <p class="base-text">Marketing</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img3.jpg"
+                        alt="foto mobile phone and laptop"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">Meditaion App</h3>
+                      <p class="base-text">App</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img4.jpg"
+                        alt=" photo wehicle interrior and phone"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">Taxi Service</h3>
+                      <p class="base-text">Marketing</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img5.jpg"
+                        alt=" photo display phone"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">Screen Illustrations</h3>
+                      <p class="base-text">Design</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img6.jpg"
+                        alt=" photo girl student"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">Online Courses</h3>
+                      <p class="base-text">Marketing</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img7.jpg"
+                        alt="instagram page screenshot"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">
+                        Instagram Stories Concept
+                      </h3>
+                      <p class="base-text">Design</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img8.jpg"
+                        alt="photo girl with fruits"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">Organic Food</h3>
+                      <p class="base-text">Web Site</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+
+              <li class="item-projekts swiper-slide">
+                <article class="card-portfolio">
+                  <a href="#" class="link-card-portfolio link">
+                    <div class="card-thumb">
+                      <img
+                        src="./images/portfolio/img9.jpg"
+                        alt="cup of cappuccino"
+                        width="396"
+                        height="300"
+                      />
+                      <p class="overlay">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="sup-title-portfolio">Fresh Coffee</h3>
+                      <p class="base-text">Web Site</p>
+                    </div></a
+                  >
+                </article>
+              </li>
+            </ul>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <section class="footer-list container mini">
+        <h2 class="visually-hidden">Footer</h2>
+
+        <div class="footer-flex">
+          <div class="footer-title">
+            <a href="./index.html" class="main-logo link"
+              >Sweet<span class="sub-logo">Land</span></a
+            >
+            <p class="base-text-white">
+              Найсмачніші торти на замовлення від професійного кондитера з
+              унікальним дизайном на найвибагливіший смак.
+            </p>
+          </div>
+          <div class="footer-social-media">
+            <p class="footer-social">Social media</p>
+            <ul class="footer-list-icon-social">
+              <li class="item-icon-social">
+                <a
+                  href="https://instagram.com/sweetland_city?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="link-social color-icon-footer"
+                >
+                  <svg class="social-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icon-social">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="link-social color-icon-footer"
+                >
+                  <svg class="social-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icon-social">
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="link-social color-icon-footer"
+                >
+                  <svg class="social-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icon-social">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="link-social color-icon-footer"
+                >
+                  <svg class="social-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-subscribe">
+            <p class="footer-social">Subscribe</p>
+            <div class="footer-form-cont">
+              <form class="footer-email">
+                <input
+                  name="email"
+                  type="email"
+                  class="footer-form-input"
+                  placeholder="E-mail"
+                  required
+                />
+                <button type="submit" class="footer-subscribe-btn button">
+                  Subscribe<svg
+                    class="subscribe-btn-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/sprite.svg#icon-subscribe-list"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- MODAL WINDOW -->
+
+    <section class="modal-winwow-2 container">
+      <!--  модалка (треба змінити назву data-modal = "2") -->
+      <div class="modal" data-modal="2">
+        <!--   Svg иконка для закрытия окна  -->
+        <svg class="modal-close-button js-modal-close" width="16" height="16">
+          <use href="./images/sprite.svg#icon-Vector"></use>
+        </svg>
+        <p class="modal-text">Залиште контактні дані та ми Вам зателефонуємо</p>
+
+        <!-- Form -->
+        <form class="modal-form" name="form-modal-window" id="tg">
+          <label class="modal-form-field">
+            <span class="modal-form-span">Name*</span>
+            <span class="modal-form-decor-icon">
+              <input
+                type="text"
+                name="name"
+                class="modal-form-input"
+                required
+                pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+                minlength="2"
+                placeholder="введіть ім'я (не менше двох літер)"
+                title="Олександр"
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-name-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-span">Phone*(+48)</span>
+            <span class="modal-form-decor-icon">
+              <input
+                type="tel"
+                name="phone"
+                class="modal-form-input"
+                required
+                pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+                title="111-111-111"
+                placeholder="введіть номер в форматі  ххх ххx ххx"
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-span">Email</span>
+            <span class="modal-form-decor-icon">
+              <input
+                type="email"
+                name="email"
+                class="modal-form-input"
+                placeholder="name@gmail.com"
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-email-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-span">Text input</span>
+            <textarea
+              name="user-message"
+              class="modal-form-area"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <input
+            id="user-policy"
+            type="checkbox"
+            class="modal-form-policy visually-hidden"
+            name="user-policy"
+            required
+          />
+          <label for="user-policy" class="modal-form-check">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I accept the terms and
+            conditions of the
+            <a href="" class="user-policy-link">Privacy Policy</a
+            ><span class="span-check">
+              <svg class="modal-check-svg" width="16" height="16">
+                <use
+                  href="./images/sprite.svg#icon-check-default"
+                ></use></svg></span
+          ></label>
+          <button type="submit" class="modal-form-btn button">Send</button>
+        </form>
       </div>
+      <!-- Подложка под модальным окном -->
+      <div class="overlays js-overlay-modal"></div>
     </section>
-  </footer>
-
-  <!-- MODAL WINDOW -->
-
-  <section class="modal-winwow-2 container">
-   
-    <!--  модалка (треба змінити назву data-modal = "2") -->
-    <div class="modal" data-modal="2">
-      <!--   Svg иконка для закрытия окна  -->
-      <svg
-        class="modal-close-button js-modal-close" width="16" height="16">
-        <use href="./images/sprite.svg#icon-Vector"></use>
-      </svg>
-      <p class="modal-text">Залиште контактні дані та ми Вам зателефонуємо</p>
-
-      <!-- Form -->
-      <form class="modal-form" name="form-modal-window" id="tg">
-        <label class="modal-form-field">
-          <span class="modal-form-span">Name*</span>
-          <span class="modal-form-decor-icon">
-            <input type="text" name="name" class="modal-form-input" required pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
-              minlength="2" placeholder="введіть ім'я (не менше двох літер)" title="Олександр" />
-            <svg class="modal-form-icon">
-              <use href="./images/sprite.svg#icon-name-black"></use>
-            </svg>
-          </span>
-        </label>
-
-        <label class="modal-form-field">
-          <span class="modal-form-span">Phone*(+48)</span>
-          <span class="modal-form-decor-icon">
-            <input type="tel" name="phone" class="modal-form-input" required pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
-              title="111-111-111" placeholder="введіть номер в форматі  ххх ххx ххx" />
-            <svg class="modal-form-icon">
-              <use href="./images/sprite.svg#icon-phone-black"></use>
-            </svg>
-          </span>
-        </label>
-
-        <label class="modal-form-field">
-          <span class="modal-form-span">Email</span>
-          <span class="modal-form-decor-icon">
-            <input type="email" name="email" class="modal-form-input" placeholder="name@gmail.com" />
-            <svg class="modal-form-icon">
-              <use href="./images/sprite.svg#icon-email-black"></use>
-            </svg>
-          </span>
-        </label>
-
-        <label class="modal-form-field">
-          <span class="modal-form-span">Text input</span>
-          <textarea name="user-message" class="modal-form-area" placeholder="Text input"></textarea>
-        </label>
-
-        <input id="user-policy" type="checkbox" class="modal-form-policy visually-hidden" name="user-policy" required />
-        <label for="user-policy" class="modal-form-check">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I accept the terms and
-          conditions of the
-          <a href="" class="user-policy-link">Privacy Policy</a><span class="span-check">
-            <svg class="modal-check-svg" width="16" height="16">
-              <use href="./images/sprite.svg#icon-check-default"></use>
-            </svg></span></label>
-        <button type="submit" class="modal-form-btn button">Send</button>
-      </form>
-      
-    </div>
-    <!-- Подложка под модальным окном -->
-    <div class="overlays js-overlay-modal"></div>
-    </section> 
     <!---------------------- /modal-window-------------------- -->
 
-  <script src="./js/mobile-menu.js"></script>
-  <script src="./js/modal-window.js"></script>
-  <script src="./js/bot.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</body>
-
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-window.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
 </html>

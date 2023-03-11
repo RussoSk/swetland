@@ -4,13 +4,13 @@ h4 {
   margin-top: 0;
 }
 
-/* .container {
-  max-width: 1100px;
+.container {
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-} */
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 
 .visually-hidden {
@@ -148,65 +148,7 @@ fill: #c03a3a;
 }
 /* _______________________________________________ */
 
-/*____________________ Слайдер____________________ */
-.slaider {
-  width: 350px;
-  height: 429px;
-  overflow: hidden;
-  /* border: 2px solid rgb(85, 83, 82); */
-  position: relative;
-  margin-bottom: 100px;
-  
-}
 
-.navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  
-}
-
-.bar {
-  height: 7px;
-  width: 50px;
-  margin: 10px;
-  cursor: pointer;
-  background-color: #dacfcf;
-  opacity: 0.5;
-  border-radius: 10px;
-  transition: all 250ms ease;
-}
-.bar:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-input[name="r"] {
-  position: absolute;
-  visibility: hidden;
-}
-.slaides {
-  width: 200%;
-  height: 100%;
-  display: flex;
-  gap: 20px
-}
-.slaide {
-  width: 50%;
-  transition: all 250ms ease;
-}
-
-.slaide img {
-  width: 100%;
-  height: 100%;
-}
-#r1:checked ~ .s1 {
-  margin-left: 0;
-}
-#r2:checked ~ .s1 {
-  margin-left: -25%;
-}
 /* _________________________________________ */
 
 

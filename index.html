@@ -411,7 +411,9 @@
                         class="link-social color-icon-personal"
                       >
                         <svg class="social-icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-tok_tik_icon"></use>
+                          <use
+                            href="./images/sprite.svg#icon-tok_tik_icon"
+                          ></use>
                         </svg>
                       </a>
                     </li>
@@ -485,7 +487,9 @@
                         class="link-social color-icon-personal"
                       >
                         <svg class="social-icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-tok_tik_icon"></use>
+                          <use
+                            href="./images/sprite.svg#icon-tok_tik_icon"
+                          ></use>
                         </svg>
                       </a>
                     </li>
@@ -681,14 +685,42 @@
 
           <!-- If we need navigation buttons -->
           <div class="reviews-buttons">
-            <button class="button btn-sl review-button-prev" type="button "><</button>
-            <button class="button btn-sl review-button-next" type="button ">></button>
+            <button class="button btn-sl review-button-prev" type="button ">
+              <
+            </button>
+            <button class="button btn-sl review-button-next" type="button ">
+              >
+            </button>
           </div>
           <div class="reviews-dots"></div>
         </div>
       </section>
     </main>
+    <!-- LOCATION -->
+    <section class="objekt-location">
+      <div class="location-map container">
+        <div class="location-window">
+          <h3 class="location-title">LOCATION</h3>
+          <div class="location-map-window">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2471.8363589028213!2d19.491848115983!3d51.71773630312286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a337e95463579%3A0x660a567da5e4da2a!2zQXJ5IFN0ZXJuZmVsZGEgMjQsIDkzLTMyNSDFgcOzZMW6LCDQn9C-0LvRjNGI0LA!5e0!3m2!1sru!2sua!4v1678623750548!5m2!1sru!2sua"
+              max-width="800"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
 
+        <div class="location-address-contact">
+          <p class="object-address">
+            POLAND, Łódź,<br />st. Ary Sternfelda 24, 93-325
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- FOOTER -->
     <footer class="footer">
       <section class="footer-list container mini">
@@ -876,8 +908,12 @@
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-window.js"></script>
+    <!--------------------- slaider -------------------------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <!--------------------- /slaider -------------------------->
+
+    <!--------------------- bot telegram -------------------------->
     <script src="./js/bot.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>

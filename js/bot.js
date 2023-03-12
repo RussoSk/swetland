@@ -9,6 +9,7 @@ const TOKEN = "6139907981:AAGbUQPYDP3RPPjEBZApklGfxxTj5Tb4JQ0";
       message += `<b>Имя покупателя: </b> ${ this.name.value }\n`;
       message += `<b>Телефон покупателя: </b> ${ this.phone.value }\n`;
       message += `<b>Email покупателя: </b> ${ this.email.value }`;
+      message += `<b>Сообщение покупателя: </b> ${ this.messages.value }`;
       console.log(message);
       axios.post(URI_API, {
       chat_id: CHAT_ID,
@@ -19,6 +20,7 @@ const TOKEN = "6139907981:AAGbUQPYDP3RPPjEBZApklGfxxTj5Tb4JQ0";
       this.name.value = "";
       this.phone.value = "";
       this.email.value = "";
+      this.messages.value = "";
       })
       .catch((err) => {
       console.warn(err);

@@ -193,8 +193,9 @@ img {
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 80px 40px 40px 40px;
-  background: #ffffff;
+  padding: 60px 40px;
+  background-image: url(../css/style/hero-image/watercolor-confetti.jpg);
+  background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -236,13 +237,25 @@ img {
   justify-content: space-between;
   overflow-y: scroll;
 }
+.mb-menu-item {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgba(226, 183, 235, 0.836);
+outline: 1px solid var(--color-icon-social);
+}
+.mob-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
 .mb-menu-list {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--title-color);
+  color: #686b81;
   margin-bottom: 40px;
   transition: color var(--transform-time-cubic);
 }
@@ -269,11 +282,11 @@ img {
   color: var(--base-color);
 }
 
-.list-icon-social-menu {
+.mob-menu-logo {
   display: flex;
   margin: 0;
-  justify-content: space-between;
-  max-width: 328px;
+ justify-content: center;
+ 
 }
 
 .mb-menu-adress {

@@ -613,7 +613,8 @@ img {
   transition: background-color var(--transform-time-cubic);
 }
 .user-policy-link {
-  color: var(--primary-color);
+  font-size: 12px;
+  color: rgb(8, 38, 128);
 }
 .item-icon-contact {
   display: flex;
@@ -963,6 +964,12 @@ img {
   .mb-menu-tell {
     font-size: 21px;
   }
+  .modal-form-check {
+    font-size: 10px;
+  }
+  .user-policy-link {
+    font-size: 9px;
+  }
 }
 @media screen and (max-width: 479px) {
   .container {
@@ -1075,8 +1082,8 @@ img {
   }
   /* header */
   .main-header {
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
   .top-line-container {
     display: flex;

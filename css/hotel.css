@@ -131,9 +131,12 @@ cursor: pointer;
   color: var(--active-primari-color);
 }
 .mb-menu-item {
-  display: flex;
- align-items: center;
- gap: 5px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgba(226, 183, 235, 0.836);
+}
+.mb-menu-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 .social-icon {
   display: inline-block;

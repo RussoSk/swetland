@@ -241,7 +241,7 @@ img {
   border-radius: 20px;
   padding: 10px 20px;
   background-color: rgba(226, 183, 235, 0.836);
-outline: 1px solid var(--color-icon-social);
+
 }
 .mob-menu-list {
   display: flex;
@@ -363,7 +363,14 @@ outline: 1px solid var(--color-icon-social);
   gap: 24px;
   justify-content: space-between;
 }
-
+.opportunity-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
 /* ======================== /OPPORTUNITY======================== */
 
 /* ======================== PERSONAL======================== */
@@ -437,6 +444,7 @@ outline: 1px solid var(--color-icon-social);
 }
 
 /* ======================== /PERSONAL======================== */
+
 
 /* ======================== SLAIDER======================== */
 
@@ -971,12 +979,7 @@ outline: 1px solid var(--color-icon-social);
     display: none;
   }
 }
-/* 1199 - +++ */
-@media screen and (max-width: 1199px) {
-  .opportunity {
-    display: none;
-  }
-}
+
 
 /* =================== MOBILE ================= */
 
@@ -1147,7 +1150,15 @@ outline: 1px solid var(--color-icon-social);
   .item-personal {
     max-width: calc((100% - 24px) / 2);
   }
-
+ /* opportuniti */
+  .op-img {
+    display: inline-block;
+   
+  }
+ .item-opportunity {
+  display: block;
+  max-width: calc((100% - 36px) / 2);
+}
   /* ----Location----- */
   .location-map {
     display: flex;
@@ -1302,9 +1313,7 @@ outline: 1px solid var(--color-icon-social);
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .item-opportunity {
-    max-height: 520px;
-  }
+ 
 
   /* ===location=== */
 

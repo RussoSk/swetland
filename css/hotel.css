@@ -90,17 +90,6 @@ cursor: pointer;
 }
 
 
-.hotel-modal-wind {
-padding: 20px;
-display: inline-block;
-text-decoration: none;
-background-color: #414b52;
-margin: 10px;
-color: #fff;
-border-radius: 3px;
-
-}
-
 
 /* _______________form__________________ */
 
@@ -121,7 +110,7 @@ border-radius: 3px;
  flex-direction: column;
  justify-content: space-between;
 }
-.mb-menu-item {
+.mob-menu-item {
   display: flex;
  align-items: center;
  gap: 5px;

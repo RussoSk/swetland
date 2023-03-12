@@ -110,7 +110,13 @@ cursor: pointer;
  flex-direction: column;
  justify-content: space-between;
 }
-.mob-menu-item {
+.mob-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.mb-menu-item {
   display: flex;
  align-items: center;
  gap: 5px;
@@ -138,21 +144,8 @@ fill: #c03a3a;
 /* _______________________________________________ */
 
 
-/* _________________________________________ */
 
 
-  /* _____________________modal-form________________________ */
-  .modal-hotel {
-    max-width: 628px;
-  }
-
-  .modal-form-field {
-    width: calc((100% - 32px) / 2);
-  }
-  .modal-container {
-   flex-direction: row;
-    
-  }
 
 
 
